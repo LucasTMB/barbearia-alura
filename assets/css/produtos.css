@@ -1,0 +1,165 @@
+/*Fonte Montserrat*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background: #011A3F;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #fefefe;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: white;
+    text-decoration: underline;
+    font-size: 23px;
+}
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 20px;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+/*Alterações quando o mouse passar por cima*/
+.produtos li:hover {
+    border-color: #C78C19;
+    transform: scale(1.1);
+}
+
+/*Alterações quando for clicado*/
+.produtos li:active {
+    border-color: green;
+}
+
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produtos .produtos-descricao {
+    font-size: 18px;
+}
+
+.produtos .preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    background: url(https://cdn1.gnarususercontent.com.br/1/1199573/7f3765f2-e5f4-45d1-a7d4-ebb63d2c438c.jpg);
+    padding: 40px 0;
+}
+
+footer .copyright, .assinatura {
+    color: white;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+/*Responsividade nos celulares*/
+
+@media screen and (max-width: 480px) {
+    .caixa, .sobre, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+        padding-bottom: 15px;
+    }
+
+    .produtos {
+        width: auto;
+    }
+
+    .produtos li {
+        width: 96%;
+        margin-bottom: 10%;
+    }
+
+    .produtos li:hover {
+        border-color: #C78C19;
+        transform: scale(1.0);
+    }
+}
+
+/*Responsividade no navegador*/
+
+@media screen and (min-width: 481px) and (max-width: 939px) {
+    .caixa, .sobre, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+        padding-bottom: 15px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .produtos {
+        width: auto;
+    }
+
+    .produtos li {
+        width: 96%;
+        margin-bottom: 10%;
+    }
+
+    .produtos li:hover {
+        border-color: #C78C19;
+        transform: scale(1.0);
+    }
+}

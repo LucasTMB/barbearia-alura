@@ -1,0 +1,218 @@
+/*Fonte Montserrat*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background: #011A3F;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #fefefe;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: white;
+    text-decoration: underline;
+    font-size: 23px;
+}
+
+.banner {
+    width: 100%;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em; /*em significa o dobro da fonte base*/
+    margin-bottom: 1em;
+    clear: left;
+}
+
+.utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.sobre {
+    padding: 3em 0;
+    background: #fefefe;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.sobre p {
+    margin-bottom: 1em;
+}
+
+.sobre strong {
+    font-weight: bold;
+}
+
+.sobre i {
+    font-style: italic;
+}
+
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#fefefe, #242625);
+}
+
+.mapa-conteudo {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa p {
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.beneficios {
+    padding: 3em 0;
+    background: linear-gradient(#242625, #1A1C1B);
+    color: #fefefe;
+}
+
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens {
+    line-height: 1.5;
+}
+
+.itens:before {
+    content: "\272D"
+}
+
+.itens:first-child {
+    font-weight: bold;
+}
+
+.imagem-beneficios {
+    width: 60%;
+    transition: 400ms;
+    box-shadow: 10px 10px 25px black;
+}
+
+.imagem-beneficios:hover {
+    opacity: 0.3;
+}
+
+.video {
+    width: 640px;
+    margin: 2em auto;
+    box-shadow: 10px 10px 25px black;
+}
+
+footer {
+    text-align: center;
+    background: url(https://cdn1.gnarususercontent.com.br/1/1199573/7f3765f2-e5f4-45d1-a7d4-ebb63d2c438c.jpg);
+    padding: 40px 0;
+}
+
+footer .copyright, .assinatura {
+    color: white;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+/*Responsividade em celulares*/
+
+@media screen and (max-width: 480px) {
+    .caixa, .sobre, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+        padding-bottom: 15px;
+    }
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+
+    .lista-beneficios {
+        margin-bottom: 15px;
+    }
+
+    .video {
+        width: 95%;
+    }
+    .sobre  {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+/*Responsividade no navegador*/
+
+@media screen and (min-width: 481px) and (max-width: 939px) {
+    .caixa, .sobre, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+        padding-bottom: 15px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+
+    .lista-beneficios {
+        margin-bottom: 15px;
+    }
+
+    .video {
+        width: 95%;
+    }
+    .sobre  {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
